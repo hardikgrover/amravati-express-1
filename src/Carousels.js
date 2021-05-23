@@ -4,39 +4,49 @@ import {Carousel} from 'react-bootstrap';
 
 const Carousels = () => {
     return(
-        <div>
-          <Carousel>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="/image/one.jpeg"
-                    alt="one.jpg"
-                    height="450px"
-                    width="10px"
-                  />
-                </Carousel.Item>
+        <div className="row">
+          <div className="col" >
+              <Carousel controls={false} fade={true} >
+                    <Carousel.Item  interval={4000}>
+                      <img
+                        className="d-block w-100"
+                        src="/image/5.jpg"
+                        alt="one.jpg"
+                        height="450px"
+                      />
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="/image/two.jpeg"
-                    alt="two.jpg"
-                    height="450px"
-                    width="10px"
-                  />
+                    <Carousel.Item interval={4000}>
+                      <img
+                        className="d-block w-100"
+                        src="/image/2.jpg"
+                        alt="two.jpg"
+                        height="450px"
+                        width="100%"
+                      />
 
-                </Carousel.Item>
+                    </Carousel.Item>
 
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="/image/three.jpeg"
-                    alt="three.jpg"
-                    height="450px"
-                    width="10px"
-                  />
-                </Carousel.Item>
-          </Carousel>
+                    <Carousel.Item interval={4000}>
+                      <img
+                        className="d-block w-100"
+                        src="/image/3.jpg"
+                        alt="three.jpg"
+                        height="450px"
+                        width="10px"
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item interval={4000}>
+                      <img
+                        className="d-block w-100"
+                        src="/image/9.jpg"
+                        alt="three.jpg"
+                        height="450px"
+                        width="10px"
+                      />
+                    </Carousel.Item>
+              </Carousel>
+          </div>
         </div>
     );
 };
