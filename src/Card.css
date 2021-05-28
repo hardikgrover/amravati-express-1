@@ -1,0 +1,19 @@
+.card:hover{
+    box-shadow: 2px 2px 20px black;
+    width: 102%;
+    height: 105%;
+    transition: 0.5s;
+} 
+
+button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+  }
+
+  .card{
+ 
+    border-color: rgb(216, 211, 211);
+    border-radius: 5%;
+   }

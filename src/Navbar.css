@@ -1,0 +1,13 @@
+.navabar a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.navabar a:hover{
+    color: #3498db !important;
+}
