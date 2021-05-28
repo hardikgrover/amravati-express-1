@@ -9,7 +9,6 @@ const StateWise = () => {
     const getData = async () =>{
        const res = await fetch('https://api.covid19india.org/data.json');
        const actualData = await res.json();
-       console.log(actualData);
        setData(actualData.statewise);
     }
 
@@ -21,6 +20,9 @@ const StateWise = () => {
     return (
         <>
           <div className="container mt-5">
+          <div className="text-center">
+                 <h1 className="my-5" style={{fontSize: "60px"}} >INDIA COVID DATA</h1>
+             </div>
 
               <div className="table-responsive">
                   <table className="table table-hover">
