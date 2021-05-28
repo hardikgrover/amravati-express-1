@@ -1,0 +1,95 @@
+.login {
+  display: flex;
+  border: 1px solid white;
+  height: 100%;
+}
+.login_right {
+  flex: 0.5;
+  border-right: 1px solid black;
+  background-color: #002537;
+  /* background-color: #19568c; */
+  display: flex;
+  align-items: center;
+}
+.login_right img {
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+  min-width: 150px;
+  /* margin: auto auto; */
+
+  /* -webkit-animation: rotation 2s infinite linear; */
+
+  /* border: 1px solid white; */
+}
+.rotate {
+  animation: rotation 20s;
+}
+
+.linear {
+  animation-timing-function: linear;
+}
+
+.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.login_left {
+  flex: 0.5;
+  background-color: #f8f8f8;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+.logo {
+  height: 300px;
+  object-fit: contain;
+  width: 100%;
+  /* border: 1px solid black; */
+  /* width: 100; */
+  /* flex: 0.5; */
+}
+.login_google {
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  padding: 3px 10px;
+  border-radius: 40px;
+  background-color: #f8f8f8;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  /* margin-top: -50px; */
+  /* flex: 0.2; */
+}
+.login_google img {
+  height: 30px;
+  object-fit: contain;
+  /* border: 1px solid black; */
+  /* align-items: center; */
+}
+.login_google:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.04) !important;
+  cursor: pointer;
+}
+.login_google p {
+  /* border: 1px solid black; */
+}
+.login_left h2 {
+  font-weight: 800;
+  font-size: 10vw;
+  /* flex: 0.3; */
+}
