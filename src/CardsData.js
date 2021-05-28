@@ -1,4 +1,4 @@
-const data=[
+const CardsData=[
     {name: "Bank", url: "https://image.flaticon.com/icons/png/512/755/755195.png"},
     {name: "Barber", url: "https://image.flaticon.com/icons/png/512/1995/1995573.png"},
     {name: "Daily Essentials", url: "https://image.flaticon.com/icons/png/512/273/273177.png"},
@@ -10,4 +10,5 @@ const data=[
     {name: "Pharmacy", url: "https://image.flaticon.com/icons/png/512/3047/3047613.png"}
 ]
 
-export default data;
+export default CardsData;
+

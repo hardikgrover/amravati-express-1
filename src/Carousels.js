@@ -5,7 +5,7 @@ import {Carousel} from 'react-bootstrap';
 const Carousels = () => {
     return(
         <div className="row">
-          <div className="col" >
+          <div className="col-12" >
               <Carousel controls={false} fade={true} >
                     <Carousel.Item  interval={4000}>
                       <img
