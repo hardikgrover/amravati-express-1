@@ -11,14 +11,7 @@ ReactDOM.render(
     <BrowserRouter>
       <App />,
     </BrowserRouter>
-  </StateProvider>
-
-  // ReactDOM.render(
-  //   <BrowserRouter>
-  //     <App />
-  //   </BrowserRouter>,
-  //   document.getElementById('root')
-  // );
-
-  //   document.getElementById("root")
+    ,
+  </StateProvider>,
+  document.getElementById("root")
 );

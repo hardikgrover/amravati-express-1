@@ -29,7 +29,7 @@ function Login() {
         <img className="rotate linear infinite" src={comparison}></img>
       </div>
       <div className="login_left">
-        <h1>Welcome to Amravati Express</h1>
+        <h2>Welcome to Amravati Express</h2>
         <img className="logo" src={logo}></img>
 
         <div className="login_google" onClick={signIn}>

@@ -1,5 +1,11 @@
 // import { useState } from "react";
 import "./App.css";
+// import {
+//   Redirect,
+//   Route,
+//   BrowserRouter as Router,
+//   Switch,
+// } from "react-router-dom";
 
 import Login from "./Login";
 import { useStateValue } from "./StateProvider";
@@ -25,17 +31,17 @@ function App() {
           <Login></Login>
         </div>
       ) : (
-        <h1> you are logged in</h1>
-        // <div>
-        //   // <Navbar />
-        //   <Switch>
-        //     <Route exact path="/" component={Main} />
-        //     <Route exact path="/about" component={About} />
-        //     <Route exact path="/contact" component={Contact} />
-        //     <Route exact path="/signup" component={SignUp} />
-        //     <Redirect to="/" />
-        //   </Switch>
-        // </div>
+        // <h1> you are logged in</h1>
+        <div>
+          // <Navbar />
+          <Switch>
+            <Route exact path="/" component={Main} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="/signup" component={SignUp} />
+            <Redirect to="/" />
+          </Switch>
+        </div>
       )}
     </div>
   );
