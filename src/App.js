@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // import { useState } from "react";
 import "./App.css";
 // import {
@@ -15,13 +14,6 @@ import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import Carousels from "./Carousels";
-=======
-import React from "react"
-import './App.css';
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
-import Carousels from './Carousels';
->>>>>>> c2210c9b5c77d122775b1d9dbc94dd0402c71b41
 import { Redirect, Route, Switch } from "react-router-dom";
 import Main from "./Main";
 import About from "./About";
@@ -33,7 +25,6 @@ function App() {
   const [{ user }, dispatch] = useStateValue();
   // const user = "";
   return (
-<<<<<<< HEAD
     <div className="app">
       {!user ? (
         <div className="app_body">
@@ -52,23 +43,6 @@ function App() {
           </Switch>
         </div>
       )}
-=======
-    <div className="App">
-      {/* navbar */}
-      <Navbar />
-
-     {/* carousel */}
-     {/* <Carousels/> */}
-    
-     <Switch>
-       <Route exact path="/" component={Main} />
-       <Route exact path="/about" component={About} />
-       <Route exact path="/contact" component={Contact} />
-       <Route exact path="/signup" component={SignUp} />
-       <Redirect to="/" />
-     </Switch>
- 
->>>>>>> c2210c9b5c77d122775b1d9dbc94dd0402c71b41
     </div>
   );
 }
