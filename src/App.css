@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .app {
   display: grid;
   place-items: center;
@@ -14,3 +15,11 @@
   width: 70vw;
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
 }
+=======
+.App{
+    background-color: #fffafa;
+    overflow-x: hidden;
+}
+
+
+>>>>>>> c2210c9b5c77d122775b1d9dbc94dd0402c71b41
