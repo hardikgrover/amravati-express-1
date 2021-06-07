@@ -1,0 +1,27 @@
+.sticky_button {
+  position: fixed !important;
+  right: 2%;
+  bottom: 2%;
+  z-index: 99;
+  background-color: var(--ae-color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  border-radius: 10px !important;
+  /* border: 2px solid black !important; */
+  padding: 10px !important;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75) !important;
+}
+.sticky_button:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.04) !important;
+  cursor: pointer;
+  /* animation: slide-in-from-bottom 0.2s ease-out backwards;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-name: slide-in-from-bottom; */
+}

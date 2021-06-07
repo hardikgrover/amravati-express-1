@@ -1,11 +1,5 @@
 // import { useState } from "react";
 import "./App.css";
-// import {
-//   Redirect,
-//   Route,
-//   BrowserRouter as Router,
-//   Switch,
-// } from "react-router-dom";
 
 import Login from "./Login";
 import { useStateValue } from "./StateProvider";
@@ -20,10 +14,11 @@ import About from "./About";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
 import SignUp from "./SignUp";
+import StickyButton from "./StickyButton";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
-  // const user = "";
+  // user = "";
   return (
     <div className="app">
       {!user ? (
@@ -33,7 +28,7 @@ function App() {
       ) : (
         // <h1> you are logged in</h1>
         <div>
-          // <Navbar />
+          <Navbar />
           <Switch>
             <Route exact path="/" component={Main} />
             <Route exact path="/about" component={About} />
@@ -41,6 +36,7 @@ function App() {
             <Route exact path="/signup" component={SignUp} />
             <Redirect to="/" />
           </Switch>
+          <StickyButton></StickyButton>
         </div>
       )}
     </div>
