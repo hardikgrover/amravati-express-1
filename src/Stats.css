@@ -1,0 +1,11 @@
+.stats {
+  display: flex;
+  padding: 50px;
+  background-color: lightblue;
+  justify-content: space-evenly;
+}
+.stats_option {
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px 50px;
+}

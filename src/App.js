@@ -22,8 +22,10 @@ function App() {
   return (
     <div className="app">
       {!user ? (
-        <div className="app_body">
-          <Login></Login>
+        <div className="login_outside">
+          <div className="app_body">
+            <Login></Login>
+          </div>
         </div>
       ) : (
         // <h1> you are logged in</h1>
@@ -31,10 +33,10 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={Main} />
-            <Route exact path="/about" component={About} />
+            {/* <Route exact path="/about" component={About} />
             <Route exact path="/contact" component={Contact} />
-            <Route exact path="/signup" component={SignUp} />
-            <Redirect to="/" />
+            <Route exact path="/signup" component={SignUp} /> */}
+            {/* <Redirect to="/" /> */}
           </Switch>
           <StickyButton></StickyButton>
         </div>
