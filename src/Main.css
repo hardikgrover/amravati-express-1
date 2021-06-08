@@ -1,0 +1,14 @@
+h1 {
+  font-size: 50px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 40px;
+}
+.main_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main_download {
+  width: 100px;
+}
