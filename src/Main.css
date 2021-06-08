@@ -1,8 +1,13 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 h1 {
   font-size: 50px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
-  padding: 40px;
+  padding: 20px;
 }
 .main_header {
   display: flex;
@@ -11,4 +16,49 @@ h1 {
 }
 .main_download {
   width: 100px;
+}
+.main_connected {
+  /* border: 1px solid black; */
+  height: 700px;
+  /* width: 100%; */
+}
+.main_downloadNow {
+  z-index: 99;
+  background-color: var(--ae-color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  border-radius: 10px !important;
+  /* border: 2px solid black !important; */
+  padding: 10px !important;
+  text-transform: none !important;
+  padding: 10px 20px !important;
+  font-size: 20px !important;
+
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75) !important;
+}
+.main_downloadRequest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(93, 42, 66);
+  border: 1px solid black;
+  width: 100%;
+  padding: 50px;
+}
+.main_downloadRequest h1 {
+  color: white;
+}
+.main_downloadNow:hover {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.04) !important;
+  cursor: pointer;
+  /* animation: slide-in-from-bottom 0.2s ease-out backwards;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-name: slide-in-from-bottom; */
 }

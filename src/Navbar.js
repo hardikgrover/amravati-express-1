@@ -1,16 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  // const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
+  // const [visible, setVisible] = useState(true);
+
+  // useEffect(() => {
+  //   // Anything in here is fired on component mount.
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     // Anything in here is fired on component unmount.
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+  // const handleScroll = () => {
+  //   const currentScrollPos = window.pageYOffset;
+
+  //   setPrevScrollpos(currentScrollPos);
+  //   setVisible(prevScrollpos > currentScrollPos);
+  // };
   return (
     <div className="navbar">
-      <img className="navbar_image" src="/image/AeLogo.png"></img>
+      <div className="navbar_image">
+        <img src="/image/AeLogo.png"></img>
+      </div>
       <div className="navbar_options">
         <p>About</p>
         <p>Register Yourself</p>
         <p>Login</p>
-        <div className="navbar_download">Download the app</div>
+        <p className="navbar_download">Download app</p>
       </div>
     </div>
   );

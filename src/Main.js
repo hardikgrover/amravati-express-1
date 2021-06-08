@@ -3,17 +3,33 @@ import StateWise from "./StateWise";
 import Cards from "./Cards";
 import Carousels from "./Carousels";
 import "./Main.css";
-import { Button } from "bootstrap/dist/js/bootstrap.bundle";
 import Stats from "./Stats";
+import { Button } from "@material-ui/core";
 
 function Main() {
   return (
     <div className="main">
       <div className="main_header">
         <h1>Find all shops and services near you</h1>
-        <button className="main_download">Download app</button>
+        <Button className="main_downloadNow">Download app</Button>
       </div>
+      <div>
+        <img className="main_connected" src="/image/mainConnected.png"></img>
+      </div>
+
       <Stats></Stats>
+      <div className="main_downloadRequest">
+        <h1>Download the Amravati Express Mobile app</h1>
+        <Button
+          className="main_downloadNow"
+          variant="outlined"
+          onClick={() => {
+            // setShow(true);
+          }}
+        >
+          Download now
+        </Button>
+      </div>
     </div>
   );
 }

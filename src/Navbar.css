@@ -12,26 +12,60 @@
   color: #3498db !important;
 }*/
 .navbar_image {
-  height: 100px;
-  /* width: 100%; */
-  border: 1px solid red;
-  object-fit: contain;
-  /* padding: 0; */
+  height: 80px;
+  width: 100px;
+  /* border: 1px solid black; */
+  padding: 0;
+}
+.navbar_image img {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  object-fit: fill;
 }
 .navbar {
   /* border: 1px solid black; */
   border-bottom: 3px solid rgb(236, 227, 227);
-  padding: 0;
+  padding: 10px;
   display: flex;
-  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  /* height: 100vh; */
+  padding-bottom: -30px;
+
+  height: 100px;
+
+  /* position: sticky; */
+  top: 0;
+  /* z-index: 100; */
+  background-color: #fff;
 }
 .navbar_options {
   display: flex;
+  padding: 10px;
+  align-items: center;
+
+  /* justify-content: space-between; */
 }
 .navbar_options p {
-  padding: 20px;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 .navbar_download {
-  padding: 20px;
-  border: 1px solid black;
+  padding: 5px;
+  border: 1.5px solid black;
+
+  border-radius: 30px;
+  font-size: 15px;
+  border-color: rgb(25, 86, 140);
+  color: rgb(25, 86, 140);
 }
+.navbar_options p:hover {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.04) !important;
+}
+/* .navbar--hidden {
+  top: -100px;
+} */

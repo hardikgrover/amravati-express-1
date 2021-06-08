@@ -1,11 +1,21 @@
 .stats {
   display: flex;
   padding: 50px;
-  background-color: lightblue;
+  background-color: rgb(237, 241, 246);
   justify-content: space-evenly;
+  width: 100%;
+  margin-top: 30px;
 }
 .stats_option {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   text-align: center;
   padding: 20px 50px;
+}
+.stats_option h4 {
+  font-size: 60px;
+}
+.stats_option p {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ae-color);
 }

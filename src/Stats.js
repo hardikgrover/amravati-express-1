@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import "./Stats.css";
 function Stats() {
@@ -7,27 +8,28 @@ function Stats() {
   useEffect(() => {
     let start = 0;
     const end = 200;
-    let increamentTime = 4;
+    let increamentTime = 100;
 
     let timer = setInterval(() => {
       start += 1;
-      setCount;
-    });
+      setCount(start);
+      if (start == end) clearInterval(timer);
+    }, increamentTime);
     if (start === end) return;
-  }, [number, duration]);
+  }, []);
   return (
     <div className="stats">
       <div className="stats_option">
         <h4>100k+</h4>
-        <p>Shops connected</p>
+        <p>Shops Connected</p>
       </div>
       <div className="stats_option">
         <h4>{count}</h4>
-        <p>Shops connected</p>
+        <p>Services Connected</p>
       </div>
       <div className="stats_option">
         <h4>100k+</h4>
-        <p>Shops connected</p>
+        <p>Happy Customers</p>
       </div>
     </div>
   );
