@@ -7,7 +7,8 @@ h1 {
   font-size: 50px;
   /* border: 1px solid black; */
   text-align: center;
-  padding: 20px;
+  padding: 10px 10px;
+  /* border: 1px solid black; */
 }
 .main_header {
   display: flex;
@@ -61,4 +62,53 @@ h1 {
   animation-fill-mode: backwards;
   animation-play-state: running;
   animation-name: slide-in-from-bottom; */
+}
+.main_whatWeDo {
+  display: flex;
+  /* border: 1px solid black; */
+  width: 100%;
+  justify-content: center;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(248, 249, 251);
+  margin-bottom: 0;
+}
+
+.main_written {
+  flex: 0.5;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.main_graphic {
+  flex: 0.5;
+  /* border: 1px solid black; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+}
+.main_card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(248, 249, 251) !important;
+}
+.main_card:hover {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(1.1) !important;
+}
+.main_cardHeading {
+  font-weight: 600;
+  font-size: 18px;
+}
+.main_cardContent {
+  font-size: 11px !important;
+  /* color: gray; */
+}
+.main_graphicImage {
+  object-fit: contain;
+  height: 300px;
 }
