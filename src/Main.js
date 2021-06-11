@@ -5,8 +5,13 @@ import Carousels from "./Carousels";
 import "./Main.css";
 import Stats from "./Stats";
 import { Button, Card, CardContent, Typography } from "@material-ui/core";
+import Footer from "./Footer";
+import { useStateValue } from "./StateProvider";
 
 function Main() {
+  const [{ user }, dispatch] = useStateValue();
+  console.log(user);
+
   const [image, setImage] = useState(
     "https://image.flaticon.com/icons/png/128/2736/2736044.png"
   );
@@ -88,6 +93,7 @@ function Main() {
           Download now
         </Button>
       </div>
+      {/* <Footer></Footer> */}
     </div>
   );
 }

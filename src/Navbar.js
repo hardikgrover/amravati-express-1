@@ -1,8 +1,16 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { auth } from "./firebase";
 import "./Navbar.css";
+import { useStateValue } from "./StateProvider";
 
 function Navbar() {
+  const [{ user }, dispatch] = useStateValue();
+  const login = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
   // const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
   // const [visible, setVisible] = useState(true);
 
@@ -25,10 +33,16 @@ function Navbar() {
       <div className="navbar_image">
         <img src="/image/AeLogo.png"></img>
       </div>
-      <div className="navbar_options">
+      <div className="navbar_options" onClick={login}>
         <p>About</p>
         <p>Register Yourself</p>
-        <p>Login</p>
+        <Link className="link" to={!user && "/login"}>
+          <div className="navbar_login">
+            <p>{!user ? "" : user.displayName}</p>
+            <p> {user ? "logout" : "login"}</p>
+          </div>
+        </Link>
+
         <p className="navbar_download">Download app</p>
       </div>
     </div>

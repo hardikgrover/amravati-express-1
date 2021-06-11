@@ -5,12 +5,14 @@ import comparison from "./assets/comparison.png";
 import { auth, provider } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import { actionTypes } from "./reducer";
+import { useHistory } from "react-router";
 
 // import { actionTypes } from "./reducer";
 // import firebase from "firebase";
 
 function Login() {
   const [{}, dispatch] = useStateValue();
+  const history = useHistory();
 
   const signIn = () => {
     auth
@@ -20,6 +22,7 @@ function Login() {
           type: actionTypes.SET_USER,
           user: result.user,
         });
+        history.push("/");
       })
       .catch((error) => alert(error.message));
   };
