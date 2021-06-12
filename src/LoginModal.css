@@ -1,0 +1,56 @@
+.login_avatar:hover {
+  cursor: pointer;
+  /* transition: transform 0.2s ease-in-out; */
+  /* transform: scale(1.04) !important; */
+  /* border: 2px solid lightgray !important; */
+}
+
+.login_modalShow {
+  /* left: 0; */
+  right: 5px;
+  top: 90px;
+  /* bottom: 0; */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: white;
+  /* color: red; */
+  /* border: 1px solid black; */
+  height: 60vh;
+  width: 60vh;
+  border-radius: 10px;
+  /* justify-content: space-evenly; */
+  border: 1px solid lightgray;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75) !important;
+
+  background-color: hsl(210, 29%, 97%);
+}
+
+.loginModal_avatar {
+  height: 60px !important;
+  width: 60px !important;
+  margin-top: 55px;
+  margin-bottom: 15px;
+  border: 1px solid black !important;
+}
+.loginModal_gmail {
+  font-size: 17px !important;
+  color: rgb(160, 156, 156);
+}
+.loginModal_Button {
+  z-index: 99;
+  /* background-color: var(--ae-color) !important; */
+  /* color: white !important; */
+  font-weight: 600 !important;
+  border-radius: 10px !important;
+  /* border: 2px solid black !important; */
+  padding: 10px !important;
+  text-transform: none !important;
+  padding: 2px 20px !important;
+  font-size: 18px !important;
+  border: 1px solid lightgray !important;
+
+  /* box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75) !important; */
+}

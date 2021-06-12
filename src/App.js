@@ -20,6 +20,7 @@ import Footer from "./Footer";
 import { auth } from "./firebase";
 import { actionTypes } from "./reducer";
 import Explore from "./Explore";
+import LoginModal from "./LoginModal";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -70,6 +71,7 @@ function App() {
               <Navbar></Navbar>
               <Explore></Explore>
             </Route>
+
             <Route path="/">
               <Navbar />
               <Main></Main>

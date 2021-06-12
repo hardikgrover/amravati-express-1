@@ -2,6 +2,7 @@ import { Avatar, MenuItem } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { auth } from "./firebase";
+import LoginModal from "./LoginModal";
 import "./Navbar.css";
 import { useStateValue } from "./StateProvider";
 
@@ -49,11 +50,12 @@ function Navbar() {
             <p className="navbar_download">Download app</p>
           </div>
         </a>
-        <Link className="link " to={!user && "/login"}>
-          <div className="navbar_avatar " onClick={login}>
-            <Avatar src={user ? user.photoURL : ""}></Avatar>
-          </div>
-        </Link>
+        {/* <Link className="link " to="/loginModal"> */}
+        <div className="navbar_avatar ">
+          {/* <Avatar src={user ? user.photoURL : ""}></Avatar> */}
+          <LoginModal></LoginModal>
+        </div>
+        {/* </Link> */}
       </div>
     </div>
   );
