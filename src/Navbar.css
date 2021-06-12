@@ -77,3 +77,30 @@
   /* text-decoration: none; */
   color: black;
 }
+/* .checkbtn {
+  color: var(--ae-color);
+  float: right;
+  display: none;
+  cursor: pointer;
+} */
+@media (max-width: 952px) {
+  /* .checkbtn {
+    display: block;
+  } */
+  .navbar_options {
+    /* position: fixed;
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    top: 100px; */
+    display: none;
+  }
+}
+.navbar_menu {
+}
+.link {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+}

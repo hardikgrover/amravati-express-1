@@ -1,3 +1,4 @@
+import { Avatar, MenuItem } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { auth } from "./firebase";
@@ -31,19 +32,31 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_image">
-        <img src="/image/AeLogo.png"></img>
+        <Link to="/">
+          <img src="/image/AeLogo.png"></img>
+        </Link>
       </div>
-      <div className="navbar_options" onClick={login}>
-        <p>About</p>
-        <p>Register Yourself</p>
+      <div className="navbar_options">
+        <div className="link">
+          <span>About</span>
+        </div>
+        <div className="link">
+          <span>Explore</span>
+        </div>
+
         <Link className="link" to={!user && "/login"}>
-          <div className="navbar_login">
-            <p>{!user ? "" : user.displayName}</p>
-            <p> {user ? "logout" : "login"}</p>
+          <div className="link" onClick={login}>
+            <span>{!user ? "" : user.displayName}</span>
+            <span> {user ? "logout" : "login"}</span>
           </div>
         </Link>
+        <div className="link">
+          <p className="navbar_download">Download app</p>
+        </div>
 
-        <p className="navbar_download">Download app</p>
+        <MenuItem className="navbar_menu"></MenuItem>
+        {/* <Avatar></Avatar> */}
+        {/* <Avatar></Avatar> */}
       </div>
     </div>
   );
