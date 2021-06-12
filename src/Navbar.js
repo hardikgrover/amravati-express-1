@@ -12,23 +12,7 @@ function Navbar() {
       auth.signOut();
     }
   };
-  // const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
-  // const [visible, setVisible] = useState(true);
 
-  // useEffect(() => {
-  //   // Anything in here is fired on component mount.
-  //   window.addEventListener("scroll", handleScroll);
-  //   return () => {
-  //     // Anything in here is fired on component unmount.
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-  // const handleScroll = () => {
-  //   const currentScrollPos = window.pageYOffset;
-
-  //   setPrevScrollpos(currentScrollPos);
-  //   setVisible(prevScrollpos > currentScrollPos);
-  // };
   return (
     <div className="navbar">
       <div className="navbar_image">
@@ -36,27 +20,40 @@ function Navbar() {
           <img src="/image/AeLogo.png"></img>
         </Link>
       </div>
-      <div className="navbar_options">
-        <div className="link">
-          <span>About</span>
-        </div>
-        <div className="link">
-          <span>Explore</span>
-        </div>
 
-        <Link className="link" to={!user && "/login"}>
-          <div className="link" onClick={login}>
-            <span>{!user ? "" : user.displayName}</span>
-            <span> {user ? "logout" : "login"}</span>
+      <div className="navbar_options">
+        <Link className="link">
+          <div className="navbar_option">
+            <span>About</span>
           </div>
         </Link>
-        <div className="link">
-          <p className="navbar_download">Download app</p>
-        </div>
 
-        <MenuItem className="navbar_menu"></MenuItem>
-        {/* <Avatar></Avatar> */}
-        {/* <Avatar></Avatar> */}
+        <Link className="link" to="/explore">
+          <div className="navbar_option">
+            <span>Explore</span>
+          </div>
+        </Link>
+
+        {/* <Link className="link " to={!user && "/login"}>
+          <div className="navbar_option" onClick={login}>
+            <span>{!user ? "" : user.displayName}</span>
+            <span className="showLink"> {user ? "logout" : "login"}</span>
+          </div>
+        </Link> */}
+        <a
+          className="link"
+          href=" https://play.google.com/store?utm_source=apac_med&utm_medium=hasem&utm_content=Apr0121&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1003227-med-hasem-py-Evergreen-Apr0121-Text_Search_BKWS-BKWS%7cONSEM_kwid_43700058906740777_creativeid_480977735237_device_c&gclid=CjwKCAjwtpGGBhBJEiwAyRZX2igYAYDnn2U8Ruiuvo-uca1nrIqMZ-hdFqUMS70aYolxYZTMfIFSPhoCbdIQAvD_BwE&gclsrc=aw.ds
+"
+        >
+          <div className="navbar_option">
+            <p className="navbar_download">Download app</p>
+          </div>
+        </a>
+        <Link className="link " to={!user && "/login"}>
+          <div className="navbar_avatar " onClick={login}>
+            <Avatar src={user ? user.photoURL : ""}></Avatar>
+          </div>
+        </Link>
       </div>
     </div>
   );
@@ -64,7 +61,8 @@ function Navbar() {
 
 export default Navbar;
 
-// <>
+{
+  /* // <>
 // <div className="container-fluid nav_bg">
 //     <div className="row">
 //         <div className="col-12">
@@ -100,4 +98,5 @@ export default Navbar;
 //         </div>
 //     </div>
 // </div>
-// </>
+// </> */
+}

@@ -19,6 +19,7 @@ import StickyButton from "./StickyButton";
 import Footer from "./Footer";
 import { auth } from "./firebase";
 import { actionTypes } from "./reducer";
+import Explore from "./Explore";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -64,6 +65,10 @@ function App() {
                   <Login></Login>
                 </div>
               </div>
+            </Route>
+            <Route path="/explore">
+              <Navbar></Navbar>
+              <Explore></Explore>
             </Route>
             <Route path="/">
               <Navbar />
